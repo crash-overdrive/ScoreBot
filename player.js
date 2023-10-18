@@ -9,10 +9,9 @@ class Player {
   constructor(id, numCourts) {
     this.id = id;
     this.numCourts = numCourts;
-    this.wins = {};
-    this.losses = {};
+    this.wins = {}; // court -> match
+    this.losses = {}; // court -> match
     this.pointDifferential = 0;
-    this.matches = [];
   }
 
   initPlayer() {

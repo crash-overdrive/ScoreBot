@@ -19,14 +19,16 @@ class Rotations {
 
     // teams queue - for just starting games off
     // TODO: change arragement to people having won games and what not
-
     this.teams = teams;
+
     // create courts
     this.courts = {};
     this.createCourts();
 
     // create courtyard
     this.courtyard = new Courtyard();
+
+    this.setStartingPositionForGames();
   }
 
   createCourts() {
