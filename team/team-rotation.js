@@ -1,9 +1,6 @@
-const Player = require('./player');
-
-class Team {
-  constructor(player1Id, player2Id, numCourts) {
-    this.player1 = new Player(player1Id);
-    this.player2 = new Player(player2Id);
+class TeamRotation {
+  constructor(team, numCourts) {
+    this.team = team;
     this.numCourts = numCourts;
     this.numGamesPlayed = {};
     this.resetGamesPlayed();
@@ -15,7 +12,7 @@ class Team {
     }
   }
 
-  addGamePlayed(courtNum, score) {
+  addGamePlayed(courtNum) {
     this.numGamesPlayed[courtNum] += 1;
   }
 
@@ -32,4 +29,4 @@ class Team {
   }
 }
 
-module.exports = Team;
+module.exports = TeamRotation;
