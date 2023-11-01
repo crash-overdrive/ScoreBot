@@ -1,4 +1,7 @@
-class TeamRotation {
+import Team = require('./team');
+
+class TeamGames {
+  #team: Team;
   constructor(team, numCourts) {
     this.team = team;
     this.numCourts = numCourts;
@@ -29,4 +32,4 @@ class TeamRotation {
   }
 }
 
-module.exports = TeamRotation;
+export = TeamGames;

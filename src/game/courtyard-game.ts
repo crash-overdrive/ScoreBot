@@ -1,4 +1,3 @@
-const { GAME_TYPE } = import('../constants');
 
 class CourtYardGame {
   constructor(team1) {
@@ -7,4 +6,4 @@ class CourtYardGame {
   }
 }
 
-module.exports = CourtYardGame;
+export = CourtYardGame;

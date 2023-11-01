@@ -1,8 +1,10 @@
 // for stats track wins and losses on each courts along with score, partner and team played against
 // points are only given for winning on kings courts
 
+import Person = require("./person");
 
-class Player {
+
+class Player extends Person {
   constructor(id, displayName) {
     this.id = id;
     this.displayName = displayName;
