@@ -3,7 +3,7 @@
 
 const Court = require('./court');
 const CourtYard = require ('./court-yard');
-const { MAX_GAME_LIMIT } = require('../constants');
+const { MAX_GAME_LIMIT } = require('../common/constants');
 
 function getRandomIntExclusive(max) {
   max = Math.floor(max);

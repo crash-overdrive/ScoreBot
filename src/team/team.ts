@@ -13,4 +13,4 @@ class Team {
   }
 }
 
-module.exports = Team;
+export = Team;
