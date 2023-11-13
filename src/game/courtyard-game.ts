@@ -1,8 +1,15 @@
+import Team = require("../team/team");
 
 class CourtYardGame {
-  constructor(team1) {
-    this.team1 = team1;
-    this.gameType = GAME_TYPE.COURT_YARD_GAME;
+  #team1: Team;
+  constructor(team1: Team) {
+    this.#team1 = team1;
+  }
+
+  finishGame(): void {
+    this.#team1.addGameToHistory(this);
+    // TODO: should this be here or controlled by controller?
+    this.#team1.resetGamesPlayed();
   }
 }
 

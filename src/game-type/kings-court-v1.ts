@@ -1,8 +1,8 @@
 // owns all the courts and courtyard and teams and scores are reported here
 // somehow needs to keep track of courts -> teams and vice versa as we will get scores here and need to know which court to direct it to
 
-const Court = require('./court');
-const CourtYard = require ('./court-yard');
+const Court = require('../court/court');
+const CourtYard = require ('../court/court-yard');
 const { MAX_GAME_LIMIT } = require('../common/constants');
 
 function getRandomIntExclusive(max) {
